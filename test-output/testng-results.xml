@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="23233" started-at="2015-05-27T17:09:47Z" finished-at="2015-05-27T17:10:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="23233" started-at="2015-05-27T17:09:47Z" finished-at="2015-05-27T17:10:10Z">
+      <class name="generic.Assignment">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:generic.Assignment@1a108c98]" name="beforeClass" is-config="true" duration-ms="10083" started-at="2015-05-27T13:09:47Z" finished-at="2015-05-27T13:09:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="verifyLinkText()[pri:0, instance:generic.Assignment@1a108c98]" name="verifyLinkText" duration-ms="11920" started-at="2015-05-27T13:09:57Z" finished-at="2015-05-27T13:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinkText -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:generic.Assignment@1a108c98]" name="afterMethod" is-config="true" duration-ms="1217" started-at="2015-05-27T13:10:09Z" finished-at="2015-05-27T13:10:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- generic.Assignment -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
