@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23233" started-at="2015-05-27T17:09:47Z" finished-at="2015-05-27T17:10:10Z">
+  <suite name="Default suite" duration-ms="23306" started-at="2015-05-29T03:24:07Z" finished-at="2015-05-29T03:24:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23233" started-at="2015-05-27T17:09:47Z" finished-at="2015-05-27T17:10:10Z">
-      <class name="generic.Assignment">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:generic.Assignment@1a108c98]" name="beforeClass" is-config="true" duration-ms="10083" started-at="2015-05-27T13:09:47Z" finished-at="2015-05-27T13:09:57Z">
+    <test name="Default test" duration-ms="23306" started-at="2015-05-29T03:24:07Z" finished-at="2015-05-29T03:24:30Z">
+      <class name="homepage.Assignment">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:homepage.Assignment@47aed201]" name="beforeClass" is-config="true" duration-ms="11022" started-at="2015-05-28T23:24:07Z" finished-at="2015-05-28T23:24:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="verifyLinkText()[pri:0, instance:generic.Assignment@1a108c98]" name="verifyLinkText" duration-ms="11920" started-at="2015-05-27T13:09:57Z" finished-at="2015-05-27T13:10:09Z">
+        <test-method status="PASS" signature="printTableData()[pri:0, instance:homepage.Assignment@47aed201]" name="printTableData" duration-ms="11053" started-at="2015-05-28T23:24:18Z" finished-at="2015-05-28T23:24:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLinkText -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:generic.Assignment@1a108c98]" name="afterMethod" is-config="true" duration-ms="1217" started-at="2015-05-27T13:10:09Z" finished-at="2015-05-27T13:10:10Z">
+        </test-method> <!-- printTableData -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:homepage.Assignment@47aed201]" name="afterMethod" is-config="true" duration-ms="1218" started-at="2015-05-28T23:24:29Z" finished-at="2015-05-28T23:24:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- generic.Assignment -->
+      </class> <!-- homepage.Assignment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

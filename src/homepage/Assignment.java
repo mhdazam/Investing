@@ -44,9 +44,9 @@ public class Assignment {
  @BeforeMethod
   public void beforeClass() throws FileNotFoundException {
 	  driver = getDriver(driverName);
+	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  driver.navigate().to(url);
-	  driver.manage().window().maximize();
   }
   
   @AfterMethod
@@ -54,7 +54,7 @@ public class Assignment {
 	  driver.quit();
   }
   
-  @Test
+  //@Test
   public void verifyRegistration() throws Exception {	  
   	  gotoHomepage();
   	  registration();
@@ -73,6 +73,13 @@ public class Assignment {
 	  gotoHomepage();
 	  linkText();
   }
+  
+  @Test
+  public void printTableData() throws Exception {
+	  gotoHomepage();
+	  getTableValues();
+  }
+  
   
   //access to home page
   public void gotoHomepage() throws Exception {
@@ -144,6 +151,34 @@ public class Assignment {
 	  mouseOverAndValidateText("//*[@id='sb_pair_172']/td[2]/a", "DAX"); 
 	  mouseOverAndValidateText("//*[@id='sb_pair_178']/td[2]/a", "Nikkei 225"); 
 	  mouseOverAndValidateText("//*[@id='sb_pair_8827']/td[2]/a", "US Dollar Index"); 
+  }
+  
+  //retrieve table data
+  public void getTableValues() throws Exception{
+	  int rowCount = driver.findElements(By.xpath("//*[@id='leftColumn']/table[2]/tbody/tr")).size();
+	  System.out.println("Number Of Rows = " + rowCount);
+ 
+	  int colCount = driver.findElements(By.xpath("//*[@id='leftColumn']/table[2]/tbody/tr[1]/td")).size();
+	  System.out.println("Number Of Columns = " + colCount);
+ 
+	  String first_part = "//*[@id='leftColumn']/table[2]/tbody/tr[";
+	  String second_part = "]/td[";
+	  String third_part = "]";
+	  String fourth_part = "/a";
+ 
+	  for (int i=1; i <= rowCount; i++){
+		  String final_xpath = first_part+i+second_part+"1"+third_part+fourth_part;
+		  String Table_data = driver.findElement(By.xpath(final_xpath)).getText();
+		  System.out.print(Table_data +"  "); 
+		  
+		  for(int j=2; j<=colCount-1; j++){
+			  String final_xpath1 = first_part+i+second_part+j+third_part;
+			  String Table_data1 = driver.findElement(By.xpath(final_xpath1)).getText();
+			  System.out.print(Table_data1 +"  ");   
+		  }
+		  System.out.println("");
+		  System.out.println("");  
+	  } 
   }
   
   //mouse over on element and verify text
