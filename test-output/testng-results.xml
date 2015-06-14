@@ -2,24 +2,52 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23306" started-at="2015-05-29T03:24:07Z" finished-at="2015-05-29T03:24:30Z">
+  <suite name="Test Suite for Invesiting" duration-ms="185695" started-at="2015-06-14T21:43:14Z" finished-at="2015-06-14T21:46:20Z">
     <groups>
+      <group name="full">
+        <method signature="TC02_Test2.verifySigninSignout(java.lang.String, java.lang.String)[pri:0, instance:crossbrowsertest.TC02_Test2@14874647]" name="verifySigninSignout" class="crossbrowsertest.TC02_Test2"/>
+      </group> <!-- full -->
+      <group name="all">
+        <method signature="TC02_Test2.verifySigninSignout(java.lang.String, java.lang.String)[pri:0, instance:crossbrowsertest.TC02_Test2@14874647]" name="verifySigninSignout" class="crossbrowsertest.TC02_Test2"/>
+      </group> <!-- all -->
+      <group name="smoke">
+        <method signature="TC02_Test2.verifySigninSignout(java.lang.String, java.lang.String)[pri:0, instance:crossbrowsertest.TC02_Test2@14874647]" name="verifySigninSignout" class="crossbrowsertest.TC02_Test2"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="23306" started-at="2015-05-29T03:24:07Z" finished-at="2015-05-29T03:24:30Z">
-      <class name="homepage.Assignment">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:homepage.Assignment@47aed201]" name="beforeClass" is-config="true" duration-ms="11022" started-at="2015-05-28T23:24:07Z" finished-at="2015-05-28T23:24:18Z">
+    <test name="Tests" duration-ms="185695" started-at="2015-06-14T21:43:14Z" finished-at="2015-06-14T21:46:20Z">
+      <class name="crossbrowsertest.TC02_Test2">
+        <test-method status="PASS" signature="startSelenium(java.lang.String)[pri:0, instance:crossbrowsertest.TC02_Test2@14874647]" name="startSelenium" is-config="true" duration-ms="116209" started-at="2015-06-14T17:43:14Z" finished-at="2015-06-14T17:45:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="printTableData()[pri:0, instance:homepage.Assignment@47aed201]" name="printTableData" duration-ms="11053" started-at="2015-05-28T23:24:18Z" finished-at="2015-05-28T23:24:29Z">
+        </test-method> <!-- startSelenium -->
+        <test-method status="PASS" signature="verifySigninSignout(java.lang.String, java.lang.String)[pri:0, instance:crossbrowsertest.TC02_Test2@14874647]" name="verifySigninSignout" duration-ms="68690" started-at="2015-06-14T17:45:11Z" finished-at="2015-06-14T17:46:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mzazam07@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nyc2015]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printTableData -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:homepage.Assignment@47aed201]" name="afterMethod" is-config="true" duration-ms="1218" started-at="2015-05-28T23:24:29Z" finished-at="2015-05-28T23:24:30Z">
+        </test-method> <!-- verifySigninSignout -->
+        <test-method status="PASS" signature="stopSelenium()[pri:0, instance:crossbrowsertest.TC02_Test2@14874647]" name="stopSelenium" is-config="true" duration-ms="776" started-at="2015-06-14T17:46:19Z" finished-at="2015-06-14T17:46:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- homepage.Assignment -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- stopSelenium -->
+      </class> <!-- crossbrowsertest.TC02_Test2 -->
+    </test> <!-- Tests -->
+  </suite> <!-- Test Suite for Invesiting -->
 </testng-results>

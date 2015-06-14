@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="homepage.Assignment">
+      <class name="prioritytest.Assignment">
         <methods>
-          <include name="printTableData"/>
-          <include name="beforeClass"/>
+          <include name="verifySigninSingout"/>
+          <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- homepage.Assignment -->
+      </class> <!-- prioritytest.Assignment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

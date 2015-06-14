@@ -27,6 +27,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -54,7 +56,7 @@ public class Assignment {
 	  driver.quit();
   }
   
-  //@Test
+  @Test
   public void verifyRegistration() throws Exception {	  
   	  gotoHomepage();
   	  registration();
@@ -74,7 +76,7 @@ public class Assignment {
 	  linkText();
   }
   
-  @Test
+  //@Test
   public void printTableData() throws Exception {
 	  gotoHomepage();
 	  getTableValues();

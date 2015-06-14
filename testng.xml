@@ -1,0 +1,28 @@
+<suite name="Test Suite for Invesiting" parallel="methods" thread-count="1">
+
+  <!-- 	<parameter name="Environment" value="STAGE"/>    -->
+    <parameter name="browser" value="Firefox" />
+  	<parameter name="sUsername" value="mzazam07@gmail.com"/>
+	<parameter name="sPassword" value="nyc2015"/>
+
+  	<test name="Tests">
+		<!-- Enter group name for specific test scripts-->
+		<groups>
+	 		<run>
+	 		 	 <include name="smoke"/>       
+	 		<!-- 	 <exclude name="regression"/>  -->
+	 		</run>
+		</groups>
+
+		<!-- Add individual packages you wanted to execute below-->
+   		<packages>
+   	   	  	<package name="crossbrowsertest.*"/>                                             
+		</packages>
+
+		<!-- Add individual classes you wanted to execute below-->
+		<classes>			
+	  	<!--    <class name="grouptest.TC01_Test1"/>    -->                             
+		</classes> 
+	</test>
+
+</suite>
